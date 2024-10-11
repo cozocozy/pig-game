@@ -26,7 +26,7 @@ body {
 main {
   position: relative;
   width: 90%;
-  height: 80%;
+  height: 90%;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
   filter: blur();
@@ -48,13 +48,13 @@ main {
 /* ELEMENTS */
 .name {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 300;
   margin-bottom: 1rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .score {
@@ -79,38 +79,41 @@ main {
 }
 
 .current {
+  display: flex;
+  flex-direction:column;
   background-color: #c7365f;
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 65%;
+  /* width: 65%; */
   padding: 2rem;
   text-align: center;
   transition: all 0.75s;
+  
 }
 
 .current-label {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 2.8rem;
   color: #ddd;
+  margin-bottom: 1rem;
+  
 }
 
 .current-score {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
 .btn {
   position: absolute;
-  /* left: 50%;
-  transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   color: #444;
-  width: 15rem;
+  width: 18rem;
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
@@ -127,24 +130,25 @@ main {
   font-size: 2rem;
   display: inline-block;
   margin-right: 1rem;
+  
 }
 
 .btn--new {
   /* top: 4rem; */
   top: 2rem;
-  right: 35%;
+
 }
 .btn--roll {
-  top: 34rem;
-  right: 15%;
+  top: 41rem;
+  /* right: 15%; */
 }
 .btn--hold {
-  top: 34rem;
-  left: 15%;
+  top: 46rem;
+  /* left: 15%; */
 }
 
 .btn:active {
-  transform: translate(0, 5px);
+  transform: translate(-50%, 5px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
@@ -155,7 +159,7 @@ main {
 .dice {
   position: absolute;
   left: 50%;
-  top: 22rem;
+  top: 28rem;
   transform: translateX(-50%);
   height: 8rem;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
@@ -212,6 +216,6 @@ main {
     top: 46.1rem;
   }
   .btn:active {
-  transform: translate(-50%, 10px);
+  /* transform: translate(-50%, 10px); */
   }
 }
